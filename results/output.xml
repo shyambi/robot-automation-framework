@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.4 on win32)" generated="20231226 20:13:19.898" rpa="false" schemaversion="4">
+<suite id="s1" name="Robot-Automation-Framework" source="C:\Users\www.abcom.in\vscode-workspace\robot-automation-framework">
+<suite id="s1-s1" name="Tests" source="C:\Users\www.abcom.in\vscode-workspace\robot-automation-framework\tests">
+<suite id="s1-s1-s1" name="Test Case 1" source="C:\Users\www.abcom.in\vscode-workspace\robot-automation-framework\tests\test_case_1.robot">
+<test id="s1-s1-s1-t1" name="LoginTest" line="11">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${site_url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231226 20:13:20.199" level="INFO">Opening browser 'firefox' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
+<status status="PASS" starttime="20231226 20:13:20.198" endtime="20231226 20:13:30.030"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://input[@placeholder='Username']</arg>
+<arg>Admin</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231226 20:13:30.032" level="INFO">Typing text 'Admin' into text field 'xpath://input[@placeholder='Username']'.</msg>
+<msg timestamp="20231226 20:13:30.079" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20231226 20:13:30.079" level="FAIL">Element with locator 'xpath://input[@placeholder='Username']' not found.</msg>
+<status status="FAIL" starttime="20231226 20:13:30.030" endtime="20231226 20:13:30.086"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://input[@placeholder='Password']</arg>
+<arg>admin123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231226 20:13:30.087" endtime="20231226 20:13:30.087"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[@type='submit']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20231226 20:13:30.087" endtime="20231226 20:13:30.091"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20231226 20:13:30.092" endtime="20231226 20:13:30.093"/>
+</kw>
+<status status="FAIL" starttime="20231226 20:13:20.197" endtime="20231226 20:13:30.094">Element with locator 'xpath://input[@placeholder='Username']' not found.</status>
+</test>
+<status status="FAIL" starttime="20231226 20:13:19.946" endtime="20231226 20:13:30.097"/>
+</suite>
+<status status="FAIL" starttime="20231226 20:13:19.938" endtime="20231226 20:13:30.099"/>
+</suite>
+<status status="FAIL" starttime="20231226 20:13:19.903" endtime="20231226 20:13:30.100"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Robot-Automation-Framework">Robot-Automation-Framework</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Tests">Robot-Automation-Framework.Tests</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="Test Case 1">Robot-Automation-Framework.Tests.Test Case 1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
